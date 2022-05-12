@@ -23,6 +23,7 @@ export default new Vuex.Store({
 		async fetchAlbums(context, keyword) {
 			context.commit('toggleFetchingStatus')
 			if (!keyword) {
+				context.commit('toggleFetchingStatus')
 				return context.commit('updateAlbums', [])
 			}
 
