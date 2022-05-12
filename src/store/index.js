@@ -26,7 +26,7 @@ export default new Vuex.Store({
 				return context.commit('updateAlbums', [])
 			}
 
-			const LAST_FM_ALBUM_SEARCH_URL = 'http://ws.audioscrobbler.com/2.0/'
+			const LAST_FM_ALBUM_SEARCH_URL = 'https://ws.audioscrobbler.com/2.0/'
 			const API_KEY = '70eb18b6a4cd46d7d6847b075883b096'
 
 			const params = {
